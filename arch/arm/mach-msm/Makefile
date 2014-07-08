@@ -6,13 +6,13 @@ CFLAGS_scm.o :=$(call as-instr,.arch_extension sec,-DREQUIRES_SEC=1)
 # clock-8x60.o, devices-msm8x60.o and gpiomux-8x60.o.
 #
 
-ifdef CONFIG_MACH_MSM8X60_PRESTO
-    ACPUCLOCK_OBJ_NAME:=acpuclock-presto.o
-    BOARD_OBJ_NAME:=board-presto.o
-    BOARD_CAMERA_OBJ_NAME:=board-camera-presto.o
-    CLOCK_OBJ_NAME:=clock-presto.o
-    DEVICES_OBJ_NAME:=devices-presto.o
-    GPIOMUX_OBJ_NAME:=gpiomux-presto.o
+ifdef CONFIG_MACH_MSM8X60_PORORO
+    ACPUCLOCK_OBJ_NAME:=acpuclock-pororo.o
+    BOARD_OBJ_NAME:=board-pororo.o
+    BOARD_CAMERA_OBJ_NAME:=board-camera-pororo.o
+    CLOCK_OBJ_NAME:=clock-pororo.o
+    DEVICES_OBJ_NAME:=devices-pororo.o
+    GPIOMUX_OBJ_NAME:=gpiomux-pororo.o
 else
     ACPUCLOCK_OBJ_NAME:=acpuclock-8x60.o
     BOARD_OBJ_NAME:=board-msm8x60.o
@@ -231,7 +231,7 @@ obj-$(CONFIG_MACH_MSM8X60_FLUID) += $(BOARD_OBJ_NAME)
 obj-$(CONFIG_MACH_MSM8X60_DRAGON) += $(BOARD_OBJ_NAME)
 obj-$(CONFIG_MACH_TYPE_MSM8X60_FUSION) += $(BOARD_OBJ_NAME) mdm.o
 obj-$(CONFIG_MACH_MSM8X60_FUSN_FFA) += $(BOARD_OBJ_NAME) mdm.o
-obj-$(CONFIG_MACH_MSM8X60_PRESTO) += $(BOARD_OBJ_NAME) mdm.o
+obj-$(CONFIG_MACH_MSM8X60_PORORO) += $(BOARD_OBJ_NAME) mdm.o
 obj-$(CONFIG_TROUT_H2W) += board-trout-h2w.o
 obj-$(CONFIG_TROUT_BATTCHG) += htc_battery.o
 obj-$(CONFIG_TROUT_PWRSINK) += htc_pwrsink.o

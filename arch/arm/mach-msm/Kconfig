@@ -606,6 +606,14 @@ config MACH_MSM8X60_DRAGON
 	help
 	  Support for the Qualcomm MSM8x60 Dragon board.
 
+config MACH_MSM8X60_PORORO
+    depends on ARCH_MSM8X60
+    default n
+    bool "MSM8X60 PORORO"
+    select CUST_SKY_H
+    help
+      Support for the Pantech MSM8x60 PRESTO project board.
+
 config MACH_MSM8960_SIM
 	depends on ARCH_MSM8960
 	bool "MSM8960 Simulator"
